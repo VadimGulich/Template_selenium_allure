@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Test suite]" parallel="tests">
+  <test name="Test">
+    <classes>
+      <class name="autoTests.TestSiute.Google_acc"/>
+      <class name="autoTests.TestSiute.Google_search"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test(failed)" parallel="tests">
+    <classes>
+      <class name="autoTests.TestSiute.Google_acc">
+        <methods>
+          <include name="deleteFiles"/>
+          <include name="Test_Example_One"/>
+          <include name="SetUp"/>
+          <include name="openURLgoogle"/>
+          <include name="Test_Example_Two"/>
+          <include name="takeScreenShotOnFailure"/>
+        </methods>
+      </class> <!-- autoTests.TestSiute.Google_acc -->
+      <class name="autoTests.TestSiute.Google_search">
+        <methods>
+          <include name="openURLgoogle"/>
+          <include name="Test_Example_One" invocation-numbers="0 1"/>
+          <include name="SetUp"/>
+          <include name="takeScreenShotOnFailure"/>
+        </methods>
+      </class> <!-- autoTests.TestSiute.Google_search -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Test suite] -->

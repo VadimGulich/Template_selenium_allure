@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="73.555" tests="4" errors="0" skipped="0" failures="4">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.7.0_55\jre\bin"/>
+    <property name="java.vm.version" value="24.55-b03"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="RU"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="Service Pack 1"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="D:\Avtomatiz test Selenium\NEW_TEMPATE - FOR AUT"/>
+    <property name="java.runtime.version" value="1.7.0_55-b13"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.7.0_55\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\Privat24\AppData\Local\Temp\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 7"/>
+    <property name="classworlds.conf" value="C:\apache-maven-3.2.3-bin\apache-maven-3.2.3\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1251"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.7.0_55\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Java\jre7\bin;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\TortoiseGit\bin;C:\apache-maven-3.2.3-bin\apache-maven-3.2.3\bin;C:\Program Files (x86)\Git\bin;C:\Program Files (x86)\Skype\Phone\;."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="51.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="6.1"/>
+    <property name="user.home" value="C:\Users\Privat24"/>
+    <property name="user.timezone" value="Europe/Helsinki"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.7"/>
+    <property name="file.encoding" value="Cp1251"/>
+    <property name="user.name" value="Privat24"/>
+    <property name="java.class.path" value="C:\apache-maven-3.2.3-bin\apache-maven-3.2.3\boot\plexus-classworlds-2.5.1.jar"/>
+    <property name="java.vm.specification.version" value="1.7"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.7.0_55\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean test"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="ru"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.7.0_55"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.7.0_55\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.7.0_55\jre\lib\resources.jar;C:\Program Files\Java\jdk1.7.0_55\jre\lib\rt.jar;C:\Program Files\Java\jdk1.7.0_55\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.7.0_55\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.7.0_55\jre\lib\jce.jar;C:\Program Files\Java\jdk1.7.0_55\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.7.0_55\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.7.0_55\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\apache-maven-3.2.3-bin\apache-maven-3.2.3"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase name="Test_Example_One" classname="autoTests.TestSiute.Google_acc" time="21.551">
+    <failure message="Timed out after 5 seconds waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.id: Passwd&apos;&#10;Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;&#10;System info: host: &apos;Privat24-ПК&apos;, ip: &apos;10.42.3.72&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_55&apos;&#10;Session ID: a2c57a40-1912-4d17-bed0-7d73a62c7bf2&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=false, applicationCacheEnabled=true, takesScreenshot=true, version=46.0.1}]" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: 
+Timed out after 5 seconds waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.id: Passwd'
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'Privat24-ПК', ip: '10.42.3.72', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_55'
+Session ID: a2c57a40-1912-4d17-bed0-7d73a62c7bf2
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=false, applicationCacheEnabled=true, takesScreenshot=true, version=46.0.1}]
+	at autoTests.TestSiute.Google_acc.Test_Example_One(Google_acc.java:27)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: {"method":"id","selector":"Passwd"}
+Command duration or timeout: 10.06 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'Privat24-ПК', ip: '10.42.3.72', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_55'
+*** Element info: {Using=id, value=Passwd}
+Session ID: a2c57a40-1912-4d17-bed0-7d73a62c7bf2
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=false, applicationCacheEnabled=true, takesScreenshot=true, version=46.0.1}]
+	at autoTests.TestSiute.Google_acc.Test_Example_One(Google_acc.java:27)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: {"method":"id","selector":"Passwd"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'Privat24-ПК', ip: '10.42.3.72', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_55'
+Driver info: driver.version: unknown
+</failure>
+    <system-out><![CDATA[Tests will be run (or rerun) in Firefox with custom profile...
+]]></system-out>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+]]></system-err>
+  </testcase>
+  <testcase name="Test_Example_Two" classname="autoTests.TestSiute.Google_acc" time="2.357">
+    <failure message="expected [Введите адрес электронной почты] but found [Введите пароль.]" type="java.lang.AssertionError">java.lang.AssertionError: expected [Введите адрес электронной почты] but found [Введите пароль.]
+	at autoTests.TestSiute.Google_acc.Test_Example_Two(Google_acc.java:41)
+</failure>
+  </testcase>
+  <testcase name="Test_Example_One" classname="autoTests.TestSiute.Google_search" time="2.192">
+    <failure message="expected [Введите адрес электронной почты] but found [Введите пароль.]" type="java.lang.AssertionError">java.lang.AssertionError: expected [Введите адрес электронной почты] but found [Введите пароль.]
+	at autoTests.TestSiute.Google_search.Test_Example_One(Google_search.java:50)
+</failure>
+    <system-out><![CDATA[Tests will be run (or rerun) in Firefox with custom profile...
+]]></system-out>
+  </testcase>
+  <testcase name="Test_Example_One" classname="autoTests.TestSiute.Google_search" time="2.341">
+    <failure message="expected [Введите адрес электронной почты] but found [Введите пароль.]" type="java.lang.AssertionError">java.lang.AssertionError: expected [Введите адрес электронной почты] but found [Введите пароль.]
+	at autoTests.TestSiute.Google_search.Test_Example_One(Google_search.java:50)
+</failure>
+  </testcase>
+</testsuite>

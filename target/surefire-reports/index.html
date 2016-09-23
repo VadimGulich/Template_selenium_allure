@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Test_suite">
+              <span class="suite-name border-failed">Test suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Test_suite">
+                    <span>D:\Avtomatiz test Selenium\NEW_TEMPATE - FOR AUT\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Test_suite">
+                    <span class="test-stats">2 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Test_suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Test_suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Test_suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Test_suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Test_suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">4 methods, 4 failed,   </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Test_suite" class="hide-methods failed suite-Test_suite"> (hide)</a> <!-- hide-methods failed suite-Test_suite -->
+                      <a href="#" panel-name="suite-Test_suite" class="show-methods failed suite-Test_suite"> (show)</a> <!-- show-methods failed suite-Test_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Test_suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_suite" title="autoTests.TestSiute.Google_search" hash-for-method="Test_Example_One(password, vidok@mail.ru)">Test_Example_One(password, vidok@mail.ru)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_suite" title="autoTests.TestSiute.Google_acc" hash-for-method="Test_Example_One">Test_Example_One</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_suite" title="autoTests.TestSiute.Google_search" hash-for-method="Test_Example_One(password, vidok@mail.ru)">Test_Example_One(password, vidok@mail.ru)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_suite" title="autoTests.TestSiute.Google_acc" hash-for-method="Test_Example_Two">Test_Example_Two</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Test_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Test_suite" class="panel Test_suite">
+          <div class="suite-Test_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">autoTests.TestSiute.Google_acc</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test_Example_One">
+                  </a> <!-- Test_Example_One -->
+                  <span class="method-name">Test_Example_One</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Timed out after 5 seconds waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.id: Passwd&apos;
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;Privat24-ПК&apos;, ip: &apos;10.42.3.72&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_55&apos;
+Session ID: a2c57a40-1912-4d17-bed0-7d73a62c7bf2
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=false, applicationCacheEnabled=true, takesScreenshot=true, version=46.0.1}]
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:261)
+	at autoTests.CustomMethods.fillInFieldValue(CustomMethods.java:103)
+	at autoTests.pages.main.TemplatePageObject.typePass(TemplatePageObject.java:68)
+	at autoTests.TestSiute.Google_acc.Test_Example_One(Google_acc.java:27)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;Passwd&quot;}
+Command duration or timeout: 10.06 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;Privat24-ПК&apos;, ip: &apos;10.42.3.72&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_55&apos;
+*** Element info: {Using=id, value=Passwd}
+Session ID: a2c57a40-1912-4d17-bed0-7d73a62c7bf2
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=false, applicationCacheEnabled=true, takesScreenshot=true, version=46.0.1}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:413)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy19.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:302)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:41)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:288)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:285)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:687)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:680)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:238)
+	... 23 more
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;Passwd&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;Privat24-ПК&apos;, ip: &apos;10.42.3.72&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_55&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/Privat24/AppData/Local/Temp/anonymous6047497892763677937webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/Privat24/AppData/Local/Temp/anonymous6047497892763677937webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
+	at &lt;anonymous class&gt;.openModalWindow(resource://gre/components/nsPrompter.js:360)
+	at &lt;anonymous class&gt;.ModalPrompter.prototype.openPrompt(resource://gre/components/nsPrompter.js:550)
+	at &lt;anonymous class&gt;.ModalPrompter.prototype.nsIPrompt_promptUsernameAndPassword(resource://gre/components/nsPrompter.js:744)
+	at &lt;anonymous class&gt;.ModalPrompter.prototype.promptAuth(resource://gre/components/nsPrompter.js:843)
+	at &lt;anonymous class&gt;.Prompter.prototype.promptAuth(resource://gre/components/nsPrompter.js:108)
+	at &lt;anonymous class&gt;.LoginManagerPrompter.prototype.promptAuth(resource://gre/components/nsLoginManagerPrompter.js:580)
+	at &lt;anonymous class&gt;.LoginManagerPromptFactory.prototype._doAsyncPrompt/runnable.run(resource://gre/components/nsLoginManagerPrompter.js:108)
+... Removed 20 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test_Example_Two">
+                  </a> <!-- Test_Example_Two -->
+                  <span class="method-name">Test_Example_Two</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Введите адрес электронной почты] but found [Введите пароль.]
+	at autoTests.CustomMethods.assertThis(CustomMethods.java:98)
+	at autoTests.pages.main.TemplatePageObject.assertErrMSG(TemplatePageObject.java:81)
+	at autoTests.TestSiute.Google_acc.Test_Example_Two(Google_acc.java:41)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 22 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Test_suite-class-failed -->
+          <div class="suite-Test_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">autoTests.TestSiute.Google_search</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test_Example_One(password, vidok@mail.ru)">
+                  </a> <!-- Test_Example_One(password, vidok@mail.ru) -->
+                  <span class="method-name">Test_Example_One</span>
+                  <span class="parameters">(password, vidok@mail.ru)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Введите адрес электронной почты] but found [Введите пароль.]
+	at autoTests.CustomMethods.assertThis(CustomMethods.java:98)
+	at autoTests.pages.main.TemplatePageObject.assertErrMSG(TemplatePageObject.java:81)
+	at autoTests.TestSiute.Google_search.Test_Example_One(Google_search.java:50)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 22 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test_Example_One(password, vidok@mail.ru)">
+                  </a> <!-- Test_Example_One(password, vidok@mail.ru) -->
+                  <span class="method-name">Test_Example_One</span>
+                  <span class="parameters">(password, vidok@mail.ru)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Введите адрес электронной почты] but found [Введите пароль.]
+	at autoTests.CustomMethods.assertThis(CustomMethods.java:98)
+	at autoTests.pages.main.TemplatePageObject.assertErrMSG(TemplatePageObject.java:81)
+	at autoTests.TestSiute.Google_search.Test_Example_One(Google_search.java:50)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 22 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Test_suite-class-failed -->
+        </div> <!-- panel Test_suite -->
+        <div panel-name="test-xml-Test_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\Avtomatiz test Selenium\NEW_TEMPATE - FOR AUT\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;1&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;Test suite&quot; parallel=&quot;tests&quot;&gt;
+  &lt;test name=&quot;Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;autoTests.TestSiute.Google_acc&quot;/&gt;
+      &lt;class name=&quot;autoTests.TestSiute.Google_search&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+  &lt;test name=&quot;Test(failed)&quot; parallel=&quot;tests&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;autoTests.TestSiute.Google_acc&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;deleteFiles&quot;/&gt;
+          &lt;include name=&quot;Test_Example_One&quot;/&gt;
+          &lt;include name=&quot;SetUp&quot;/&gt;
+          &lt;include name=&quot;openURLgoogle&quot;/&gt;
+          &lt;include name=&quot;Test_Example_Two&quot;/&gt;
+          &lt;include name=&quot;takeScreenShotOnFailure&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- autoTests.TestSiute.Google_acc --&gt;
+      &lt;class name=&quot;autoTests.TestSiute.Google_search&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;openURLgoogle&quot;/&gt;
+          &lt;include name=&quot;Test_Example_One&quot; invocation-numbers=&quot;0 1&quot;/&gt;
+          &lt;include name=&quot;SetUp&quot;/&gt;
+          &lt;include name=&quot;takeScreenShotOnFailure&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- autoTests.TestSiute.Google_search --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test(failed) --&gt;
+&lt;/suite&gt; &lt;!-- Test suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Test_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Test suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test (2 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">Test(failed) (2 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Test_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Test suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Test_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Test suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Test_suite');
+function tableData_Test_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(4);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'Test_Example_One')
+data.setCell(0, 2, 'autoTests.TestSiute.Google_acc')
+data.setCell(0, 3, 21404);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'Test_Example_Two')
+data.setCell(1, 2, 'autoTests.TestSiute.Google_acc')
+data.setCell(1, 3, 2357);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'Test_Example_One')
+data.setCell(2, 2, 'autoTests.TestSiute.Google_search')
+data.setCell(2, 3, 2340);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'Test_Example_One')
+data.setCell(3, 2, 'autoTests.TestSiute.Google_search')
+data.setCell(3, 3, 2193);
+window.suiteTableData['Test_suite']= { tableData: data, tableDiv: 'times-div-Test_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 28 seconds</span>
+              <div id="times-div-Test_suite">
+              </div> <!-- times-div-Test_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Test_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Test suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Test_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">1 ignored method</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">autoTests.TestSiute.Google_search</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">deleteFiles</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Test_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">autoTests.TestSiute.Google_acc</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">openURLgoogle</span>
+                <span class="method-start">27908 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Test_Example_One</span>
+                <span class="method-start">30822 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">takeScreenShotOnFailure([TestResult name=Test_Example_One status=FAILURE method=Google_acc.Test_Example_One()[pri:1, instanc...)</span>
+                <span class="method-start">52406 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp</span>
+                <span class="method-start">52799 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">openURLgoogle</span>
+                <span class="method-start">52800 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Test_Example_Two</span>
+                <span class="method-start">53455 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">takeScreenShotOnFailure([TestResult name=Test_Example_Two status=FAILURE method=Google_acc.Test_Example_Two()[pri:1, instanc...)</span>
+                <span class="method-start">55812 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">autoTests.TestSiute.Google_search</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp</span>
+                <span class="method-start">55892 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">openURLgoogle</span>
+                <span class="method-start">57196 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Test_Example_One(password, vidok@mail.ru)</span>
+                <span class="method-start">57903 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">takeScreenShotOnFailure([TestResult name=Test_Example_One status=FAILURE method=Google_search.Test_Example_One(java.lang.Str...)</span>
+                <span class="method-start">60096 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp</span>
+                <span class="method-start">60193 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">openURLgoogle</span>
+                <span class="method-start">60194 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Test_Example_One(password, vidok@mail.ru)</span>
+                <span class="method-start">61370 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">takeScreenShotOnFailure([TestResult name=Test_Example_One status=FAILURE method=Google_search.Test_Example_One(java.lang.Str...)</span>
+                <span class="method-start">63711 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">autoTests.TestSiute.Google_acc</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
+                <span class="method-name">deleteFiles</span>
+                <span class="method-start">64135 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

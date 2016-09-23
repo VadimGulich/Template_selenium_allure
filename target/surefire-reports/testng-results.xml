@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="4" total="4" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Test suite" duration-ms="63894" started-at="2016-09-23T09:52:20Z" finished-at="2016-09-23T09:53:24Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="63894" started-at="2016-09-23T09:52:20Z" finished-at="2016-09-23T09:53:24Z">
+      <class name="autoTests.TestSiute.Google_acc">
+        <test-method status="PASS" signature="SetUp()[pri:0, instance:autoTests.TestSiute.Google_acc@d46ba6f]" name="SetUp" is-config="true" duration-ms="27908" started-at="2016-09-23T12:52:20Z" finished-at="2016-09-23T12:52:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method status="PASS" signature="openURLgoogle()[pri:0, instance:autoTests.TestSiute.Google_acc@d46ba6f]" name="openURLgoogle" is-config="true" duration-ms="2914" started-at="2016-09-23T12:52:48Z" finished-at="2016-09-23T12:52:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openURLgoogle -->
+        <test-method status="FAIL" signature="Test_Example_One()[pri:1, instance:autoTests.TestSiute.Google_acc@d46ba6f]" name="Test_Example_One" duration-ms="21404" started-at="2016-09-23T12:52:51Z" finished-at="2016-09-23T12:53:12Z">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Timed out after 5 seconds waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.id: Passwd'
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'Privat24-ПК', ip: '10.42.3.72', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_55'
+Session ID: a2c57a40-1912-4d17-bed0-7d73a62c7bf2
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=false, applicationCacheEnabled=true, takesScreenshot=true, version=46.0.1}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Timed out after 5 seconds waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.id: Passwd'
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'Privat24-ПК', ip: '10.42.3.72', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_55'
+Session ID: a2c57a40-1912-4d17-bed0-7d73a62c7bf2
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=false, applicationCacheEnabled=true, takesScreenshot=true, version=46.0.1}]
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:261)
+	at autoTests.CustomMethods.fillInFieldValue(CustomMethods.java:103)
+	at autoTests.pages.main.TemplatePageObject.typePass(TemplatePageObject.java:68)
+	at autoTests.TestSiute.Google_acc.Test_Example_One(Google_acc.java:27)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"id","selector":"Passwd"}
+Command duration or timeout: 10.06 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'Privat24-ПК', ip: '10.42.3.72', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_55'
+*** Element info: {Using=id, value=Passwd}
+Session ID: a2c57a40-1912-4d17-bed0-7d73a62c7bf2
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=false, applicationCacheEnabled=true, takesScreenshot=true, version=46.0.1}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:413)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy19.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:302)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:41)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:288)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:285)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:687)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:680)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:238)
+	... 23 more
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"id","selector":"Passwd"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'Privat24-ПК', ip: '10.42.3.72', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_55'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/Privat24/AppData/Local/Temp/anonymous6047497892763677937webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/Privat24/AppData/Local/Temp/anonymous6047497892763677937webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
+	at <anonymous class>.openModalWindow(resource://gre/components/nsPrompter.js:360)
+	at <anonymous class>.ModalPrompter.prototype.openPrompt(resource://gre/components/nsPrompter.js:550)
+	at <anonymous class>.ModalPrompter.prototype.nsIPrompt_promptUsernameAndPassword(resource://gre/components/nsPrompter.js:744)
+	at <anonymous class>.ModalPrompter.prototype.promptAuth(resource://gre/components/nsPrompter.js:843)
+	at <anonymous class>.Prompter.prototype.promptAuth(resource://gre/components/nsPrompter.js:108)
+	at <anonymous class>.LoginManagerPrompter.prototype.promptAuth(resource://gre/components/nsLoginManagerPrompter.js:580)
+	at <anonymous class>.LoginManagerPromptFactory.prototype._doAsyncPrompt/runnable.run(resource://gre/components/nsLoginManagerPrompter.js:108)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_Example_One -->
+        <test-method status="PASS" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:autoTests.TestSiute.Google_acc@d46ba6f]" name="takeScreenShotOnFailure" is-config="true" duration-ms="393" started-at="2016-09-23T12:53:12Z" finished-at="2016-09-23T12:53:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Test_Example_One status=FAILURE method=Google_acc.Test_Example_One()[pri:1, instance:autoTests.TestSiute.Google_acc@d46ba6f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShotOnFailure -->
+        <test-method status="PASS" signature="SetUp()[pri:0, instance:autoTests.TestSiute.Google_acc@d46ba6f]" name="SetUp" is-config="true" duration-ms="1" started-at="2016-09-23T12:53:13Z" finished-at="2016-09-23T12:53:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method status="PASS" signature="openURLgoogle()[pri:0, instance:autoTests.TestSiute.Google_acc@d46ba6f]" name="openURLgoogle" is-config="true" duration-ms="655" started-at="2016-09-23T12:53:13Z" finished-at="2016-09-23T12:53:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openURLgoogle -->
+        <test-method status="FAIL" signature="Test_Example_Two()[pri:1, instance:autoTests.TestSiute.Google_acc@d46ba6f]" name="Test_Example_Two" duration-ms="2357" started-at="2016-09-23T12:53:13Z" finished-at="2016-09-23T12:53:16Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Введите адрес электронной почты] but found [Введите пароль.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Введите адрес электронной почты] but found [Введите пароль.]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at autoTests.CustomMethods.assertThis(CustomMethods.java:98)
+	at autoTests.pages.main.TemplatePageObject.assertErrMSG(TemplatePageObject.java:81)
+	at autoTests.TestSiute.Google_acc.Test_Example_Two(Google_acc.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_Example_Two -->
+        <test-method status="PASS" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:autoTests.TestSiute.Google_acc@d46ba6f]" name="takeScreenShotOnFailure" is-config="true" duration-ms="67" started-at="2016-09-23T12:53:16Z" finished-at="2016-09-23T12:53:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Test_Example_Two status=FAILURE method=Google_acc.Test_Example_Two()[pri:1, instance:autoTests.TestSiute.Google_acc@d46ba6f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShotOnFailure -->
+        <test-method status="PASS" signature="deleteFiles()[pri:0, instance:autoTests.TestSiute.Google_acc@d46ba6f]" name="deleteFiles" is-config="true" duration-ms="8267" started-at="2016-09-23T12:53:24Z" finished-at="2016-09-23T12:53:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteFiles -->
+      </class> <!-- autoTests.TestSiute.Google_acc -->
+      <class name="autoTests.TestSiute.Google_search">
+        <test-method status="PASS" signature="SetUp()[pri:0, instance:autoTests.TestSiute.Google_search@1e79d438]" name="SetUp" is-config="true" duration-ms="1304" started-at="2016-09-23T12:53:16Z" finished-at="2016-09-23T12:53:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method status="PASS" signature="openURLgoogle()[pri:0, instance:autoTests.TestSiute.Google_search@1e79d438]" name="openURLgoogle" is-config="true" duration-ms="707" started-at="2016-09-23T12:53:17Z" finished-at="2016-09-23T12:53:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openURLgoogle -->
+        <test-method status="FAIL" signature="Test_Example_One(java.lang.String, java.lang.String)[pri:1, instance:autoTests.TestSiute.Google_search@1e79d438]" name="Test_Example_One" duration-ms="2193" started-at="2016-09-23T12:53:18Z" data-provider="dataProvider" finished-at="2016-09-23T12:53:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[password]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[vidok@mail.ru]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Введите адрес электронной почты] but found [Введите пароль.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Введите адрес электронной почты] but found [Введите пароль.]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at autoTests.CustomMethods.assertThis(CustomMethods.java:98)
+	at autoTests.pages.main.TemplatePageObject.assertErrMSG(TemplatePageObject.java:81)
+	at autoTests.TestSiute.Google_search.Test_Example_One(Google_search.java:50)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_Example_One -->
+        <test-method status="PASS" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:autoTests.TestSiute.Google_search@1e79d438]" name="takeScreenShotOnFailure" is-config="true" duration-ms="97" started-at="2016-09-23T12:53:20Z" finished-at="2016-09-23T12:53:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Test_Example_One status=FAILURE method=Google_search.Test_Example_One(java.lang.String, java.lang.String)[pri:1, instance:autoTests.TestSiute.Google_search@1e79d438] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShotOnFailure -->
+        <test-method status="PASS" signature="SetUp()[pri:0, instance:autoTests.TestSiute.Google_search@1e79d438]" name="SetUp" is-config="true" duration-ms="1" started-at="2016-09-23T12:53:20Z" finished-at="2016-09-23T12:53:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method status="PASS" signature="openURLgoogle()[pri:0, instance:autoTests.TestSiute.Google_search@1e79d438]" name="openURLgoogle" is-config="true" duration-ms="1176" started-at="2016-09-23T12:53:20Z" finished-at="2016-09-23T12:53:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openURLgoogle -->
+        <test-method status="FAIL" signature="Test_Example_One(java.lang.String, java.lang.String)[pri:1, instance:autoTests.TestSiute.Google_search@1e79d438]" name="Test_Example_One" duration-ms="2340" started-at="2016-09-23T12:53:21Z" data-provider="dataProvider" finished-at="2016-09-23T12:53:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[password]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[vidok@mail.ru]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Введите адрес электронной почты] but found [Введите пароль.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Введите адрес электронной почты] but found [Введите пароль.]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at autoTests.CustomMethods.assertThis(CustomMethods.java:98)
+	at autoTests.pages.main.TemplatePageObject.assertErrMSG(TemplatePageObject.java:81)
+	at autoTests.TestSiute.Google_search.Test_Example_One(Google_search.java:50)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_Example_One -->
+        <test-method status="PASS" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:autoTests.TestSiute.Google_search@1e79d438]" name="takeScreenShotOnFailure" is-config="true" duration-ms="92" started-at="2016-09-23T12:53:24Z" finished-at="2016-09-23T12:53:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Test_Example_One status=FAILURE method=Google_search.Test_Example_One(java.lang.String, java.lang.String)[pri:1, instance:autoTests.TestSiute.Google_search@1e79d438] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShotOnFailure -->
+      </class> <!-- autoTests.TestSiute.Google_search -->
+    </test> <!-- Test -->
+  </suite> <!-- Test suite -->
+</testng-results>

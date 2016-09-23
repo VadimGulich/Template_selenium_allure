@@ -1,0 +1,43 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 73.555 sec <<< FAILURE! - in TestSuite
+Test_Example_One(autoTests.TestSiute.Google_acc)  Time elapsed: 21.551 sec  <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+Timed out after 5 seconds waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.id: Passwd'
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'Privat24-ПК', ip: '10.42.3.72', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_55'
+Session ID: a2c57a40-1912-4d17-bed0-7d73a62c7bf2
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=false, applicationCacheEnabled=true, takesScreenshot=true, version=46.0.1}]
+	at autoTests.TestSiute.Google_acc.Test_Example_One(Google_acc.java:27)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: {"method":"id","selector":"Passwd"}
+Command duration or timeout: 10.06 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'Privat24-ПК', ip: '10.42.3.72', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_55'
+*** Element info: {Using=id, value=Passwd}
+Session ID: a2c57a40-1912-4d17-bed0-7d73a62c7bf2
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=false, applicationCacheEnabled=true, takesScreenshot=true, version=46.0.1}]
+	at autoTests.TestSiute.Google_acc.Test_Example_One(Google_acc.java:27)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: {"method":"id","selector":"Passwd"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'Privat24-ПК', ip: '10.42.3.72', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_55'
+Driver info: driver.version: unknown
+
+Test_Example_Two(autoTests.TestSiute.Google_acc)  Time elapsed: 2.357 sec  <<< FAILURE!
+java.lang.AssertionError: expected [Введите адрес электронной почты] but found [Введите пароль.]
+	at autoTests.TestSiute.Google_acc.Test_Example_Two(Google_acc.java:41)
+
+Test_Example_One(autoTests.TestSiute.Google_search)  Time elapsed: 2.192 sec  <<< FAILURE!
+java.lang.AssertionError: expected [Введите адрес электронной почты] but found [Введите пароль.]
+	at autoTests.TestSiute.Google_search.Test_Example_One(Google_search.java:50)
+
+Test_Example_One(autoTests.TestSiute.Google_search)  Time elapsed: 2.341 sec  <<< FAILURE!
+java.lang.AssertionError: expected [Введите адрес электронной почты] but found [Введите пароль.]
+	at autoTests.TestSiute.Google_search.Test_Example_One(Google_search.java:50)
+

@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>TestNG Report</title><style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}</style></head><body><table><tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr><tr><th colspan="7">Test suite</th></tr><tr><td><a href="#t0">Test</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">4</td><td class="num">63 894</td><td></td><td></td></tr></table><table><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Test suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">autoTests.TestSiute.Google_acc</td><td><a href="#m0">Test_Example_One</a></td><td rowspan="1">1474624371280</td><td rowspan="1">21404</td></tr><tr class="failedeven"><td><a href="#m1">Test_Example_Two</a></td><td rowspan="1">1474624393913</td><td rowspan="1">2357</td></tr><tr class="failedodd"><td rowspan="2">autoTests.TestSiute.Google_search</td><td><a href="#m2">Test_Example_One</a></td><td rowspan="2">1474624398361</td><td rowspan="2">2193</td></tr><tr class="failedodd"><td><a href="#m3">Test_Example_One</a></td></tr></tbody></table><h2>Test</h2><h3 id="m0">autoTests.TestSiute.Google_acc#Test_Example_One</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Timed out after 5 seconds waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.id: Passwd&apos;
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;Privat24-ПК&apos;, ip: &apos;10.42.3.72&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_55&apos;
+Session ID: a2c57a40-1912-4d17-bed0-7d73a62c7bf2
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=false, applicationCacheEnabled=true, takesScreenshot=true, version=46.0.1}]
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:261)
+	at autoTests.CustomMethods.fillInFieldValue(CustomMethods.java:103)
+	at autoTests.pages.main.TemplatePageObject.typePass(TemplatePageObject.java:68)
+	at autoTests.TestSiute.Google_acc.Test_Example_One(Google_acc.java:27)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;Passwd&quot;}
+Command duration or timeout: 10.06 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;Privat24-ПК&apos;, ip: &apos;10.42.3.72&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_55&apos;
+*** Element info: {Using=id, value=Passwd}
+Session ID: a2c57a40-1912-4d17-bed0-7d73a62c7bf2
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=false, applicationCacheEnabled=true, takesScreenshot=true, version=46.0.1}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:413)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy19.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:302)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:41)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:288)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:285)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:687)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:680)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:238)
+	... 23 more
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;Passwd&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;Privat24-ПК&apos;, ip: &apos;10.42.3.72&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_55&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/Privat24/AppData/Local/Temp/anonymous6047497892763677937webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/Privat24/AppData/Local/Temp/anonymous6047497892763677937webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
+	at &lt;anonymous class&gt;.openModalWindow(resource://gre/components/nsPrompter.js:360)
+	at &lt;anonymous class&gt;.ModalPrompter.prototype.openPrompt(resource://gre/components/nsPrompter.js:550)
+	at &lt;anonymous class&gt;.ModalPrompter.prototype.nsIPrompt_promptUsernameAndPassword(resource://gre/components/nsPrompter.js:744)
+	at &lt;anonymous class&gt;.ModalPrompter.prototype.promptAuth(resource://gre/components/nsPrompter.js:843)
+	at &lt;anonymous class&gt;.Prompter.prototype.promptAuth(resource://gre/components/nsPrompter.js:108)
+	at &lt;anonymous class&gt;.LoginManagerPrompter.prototype.promptAuth(resource://gre/components/nsLoginManagerPrompter.js:580)
+	at &lt;anonymous class&gt;.LoginManagerPromptFactory.prototype._doAsyncPrompt/runnable.run(resource://gre/components/nsLoginManagerPrompter.js:108)
+... Removed 20 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m1">autoTests.TestSiute.Google_acc#Test_Example_Two</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [Введите адрес электронной почты] but found [Введите пароль.]
+	at autoTests.CustomMethods.assertThis(CustomMethods.java:98)
+	at autoTests.pages.main.TemplatePageObject.assertErrMSG(TemplatePageObject.java:81)
+	at autoTests.TestSiute.Google_acc.Test_Example_Two(Google_acc.java:41)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 22 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m2">autoTests.TestSiute.Google_search#Test_Example_One</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>password</td><td>vidok@mail.ru</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: expected [Введите адрес электронной почты] but found [Введите пароль.]
+	at autoTests.CustomMethods.assertThis(CustomMethods.java:98)
+	at autoTests.pages.main.TemplatePageObject.assertErrMSG(TemplatePageObject.java:81)
+	at autoTests.TestSiute.Google_search.Test_Example_One(Google_search.java:50)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 22 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m3">autoTests.TestSiute.Google_search#Test_Example_One</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>password</td><td>vidok@mail.ru</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: expected [Введите адрес электронной почты] but found [Введите пароль.]
+	at autoTests.CustomMethods.assertThis(CustomMethods.java:98)
+	at autoTests.pages.main.TemplatePageObject.assertErrMSG(TemplatePageObject.java:81)
+	at autoTests.TestSiute.Google_search.Test_Example_One(Google_search.java:50)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 22 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p></body></html>

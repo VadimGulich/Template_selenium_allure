@@ -1,0 +1,14 @@
+autoTests\CustomMethods.class
+autoTests\TestSiute\Google_acc.class
+autoTests\ConfigurationVariables.class
+autoTests\WorkWithFields\FieldsPageGoogle.class
+autoTests\pages\main\TemplatePageObject.class
+autoTests\JavaMail\TestEmailSend.class
+autoTests\HttpClientExample\HttpClientExample.class
+autoTests\JavaMail\TestImap.class
+autoTests\JavaMail\SendMailFile.class
+autoTests\SetupAndTeardown.class
+autoTests\TestSiute\Google_search.class
+autoTests\JavaMail\SendMailFile$HTMLDataSource.class
+autoTests\HttpClientExample\HttpClientExample$1.class
+autoTests\JavaMail\TestEmailSend$1.class
