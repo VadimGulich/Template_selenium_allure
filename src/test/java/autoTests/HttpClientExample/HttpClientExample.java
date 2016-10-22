@@ -154,6 +154,34 @@ public class HttpClientExample {
     public void  send() throws Exception {
         String url = "https://delta.test.region.igov.org.ua/wf/service/action/task/delete-process?nID_Order=187100983";
 //        HttpResponse response = Request.Get(url).execute().returnResponse();
+
+//        switch (CV.baseURL) {
+//            case "https://alpha.test.igov.org.ua":
+//                String url ="https://alpha.test.region.igov.org.ua";
+//                break;
+//
+//            case "https://alpha.test.region.igov.org.ua":
+//               String url ="https://beta.test.region.igov.org.ua";
+//                break;
+
+//        case "https://beta-old.test.igov.org.ua":
+//               String url ="https://beta-old.test.region.igov.org.ua";
+//                break;
+
+//        case "https://delta.test.igov.org.ua":
+//               String url ="https://delta.test.region.igov.org.ua";
+//                break;
+//
+//            default:
+//                throw new Exception("ERROR URL ");
+//
+//    }
+
+
+        String patch = "/wf/service/action/task/delete-process?nID_Order=";
+        String nIDorder = "";
+        String urlDelete = url+patch+nIDorder;
+
         HttpClient client = createHttpClient_AcceptsUntrustedCerts();
         HttpDelete httpDelete = new HttpDelete(url);
 
@@ -173,36 +201,6 @@ public class HttpClientExample {
 
         // http://automated-testing.info/t/zaprosit-json-i-rasparsit-na-java-junit-testng/9481/8
     }
-@Test
-    private void sendDelete() throws Exception {
 
-        String url = "https://delta.test.region.igov.org.ua/wf/service/action/task/delete-process?nID_Order=187100983";
-
-        HttpClient client = createHttpClient_AcceptsUntrustedCerts();
-        HttpDelete httpDelete = new HttpDelete(url);
-
-        // add header
-
-        httpDelete.setHeader("Content-Type", "application/json");
-        httpDelete.setHeader("Authorization", "Basic a2VybWl0Omtlcm1pdA==");
-
-        HttpResponse response = client.execute(httpDelete);
-        System.out.println("\nSending 'POST' request to URL : " + url);
-        System.out.println("Post parameters : ");
-        System.out.println("Response Code : " +
-                response.getStatusLine().getStatusCode());
-
-        BufferedReader rd = new BufferedReader(
-                new InputStreamReader(response.getEntity().getContent()));
-
-        StringBuffer result = new StringBuffer();
-        String line = "";
-        while ((line = rd.readLine()) != null) {
-            result.append(line);
-        }
-
-        System.out.println(result.toString());
-
-    }
 
 }
