@@ -18,8 +18,10 @@ import org.apache.http.NameValuePair;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
 import org.apache.http.client.fluent.Request;
+import org.apache.http.client.methods.HttpDelete;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
+import org.apache.http.client.methods.HttpUriRequest;
 import org.apache.http.config.Registry;
 import org.apache.http.config.RegistryBuilder;
 import org.apache.http.conn.socket.ConnectionSocketFactory;
@@ -35,6 +37,7 @@ import org.apache.http.message.BasicNameValuePair;
 import org.apache.tika.io.IOUtils;
 import org.json.JSONArray;
 import org.json.JSONObject;
+import org.testng.annotations.Test;
 
 import javax.net.ssl.HostnameVerifier;
 import javax.net.ssl.SSLContext;
@@ -147,16 +150,59 @@ public class HttpClientExample {
         return client;
     }
 
-    private String send() throws Exception {
-        String url = "http://www.google.com/search?q=developer";
-        HttpResponse response = Request.Get(url).execute().returnResponse();
+    @Test
+    public void  send() throws Exception {
+        String url = "https://delta.test.region.igov.org.ua/wf/service/action/task/delete-process?nID_Order=187100983";
+//        HttpResponse response = Request.Get(url).execute().returnResponse();
+        HttpClient client = createHttpClient_AcceptsUntrustedCerts();
+        HttpDelete httpDelete = new HttpDelete(url);
+
+        httpDelete.addHeader("Content-Type", "application/json");
+        httpDelete.addHeader("Authorization","Basic a2VybWl0Omtlcm1pdA==");
+
+        HttpResponse response = client.execute(httpDelete);
 //        HttpResponse response = Request.Post(url).stringBody("request_body","content_type").execute().returnResponse();
 //        JSONObject jsonResponse = new JSONObject(IOUtils.toString(response.getEntity().getContent()));
 //        JSONArray jsonResponse = new JSONArray(IOUtils.toString(response.getEntity().getContent()));
-        System.out.println(response.toString());
-        return response.toString();
+        JSONObject jsonResponse = new JSONObject(IOUtils.toString(response.getEntity().getContent()));
+
+        System.out.println("Response Code : " +
+                response.getStatusLine().getStatusCode());
+
+        System.out.print("RESP Body :"+ jsonResponse);
+
         // http://automated-testing.info/t/zaprosit-json-i-rasparsit-na-java-junit-testng/9481/8
     }
+@Test
+    private void sendDelete() throws Exception {
 
+        String url = "https://delta.test.region.igov.org.ua/wf/service/action/task/delete-process?nID_Order=187100983";
+
+        HttpClient client = createHttpClient_AcceptsUntrustedCerts();
+        HttpDelete httpDelete = new HttpDelete(url);
+
+        // add header
+
+        httpDelete.setHeader("Content-Type", "application/json");
+        httpDelete.setHeader("Authorization", "Basic a2VybWl0Omtlcm1pdA==");
+
+        HttpResponse response = client.execute(httpDelete);
+        System.out.println("\nSending 'POST' request to URL : " + url);
+        System.out.println("Post parameters : ");
+        System.out.println("Response Code : " +
+                response.getStatusLine().getStatusCode());
+
+        BufferedReader rd = new BufferedReader(
+                new InputStreamReader(response.getEntity().getContent()));
+
+        StringBuffer result = new StringBuffer();
+        String line = "";
+        while ((line = rd.readLine()) != null) {
+            result.append(line);
+        }
+
+        System.out.println(result.toString());
+
+    }
 
 }
